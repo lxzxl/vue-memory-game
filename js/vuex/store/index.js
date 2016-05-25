@@ -8,7 +8,6 @@ Vue.use(Vuex);
 
 const state = {
     leftMatched: 0,
-    highestSpeed: 0,
     status: '',
     cards: [],
     elapsedMs: 0,
@@ -18,7 +17,6 @@ const state = {
 const mutations = {
     [TYPES.RESET](st, newState) {
         st.leftMatched = newState.leftMatched;
-        st.highestSpeed = newState.highestSpeed;
         st.status = newState.status;
         st.cards = newState.cards;
         st.elapsedMs = newState.elapsedMs;
@@ -47,16 +45,6 @@ const mutations = {
 
     [TYPES.COUNTING](st) {
         st.elapsedMs++;
-    },
-
-    [TYPES.UPDATE_HIGHESTSPEED](st) {
-        //TODO
-        if (!localStorage.getItem('highestSpeed')) {
-            return localStorage.setItem('highestSpeed', st.elapsedMs);
-        }
-        if (localStorage.getItem('highestSpeed') > st.elapsedMs) {
-            return localStorage.setItem('highestSpeed', st.elapsedMs);
-        }
     },
 
     [TYPES.TOGGLE_MODAL](state){

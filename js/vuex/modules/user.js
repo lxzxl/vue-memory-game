@@ -3,30 +3,43 @@
  */
 'use strict';
 
-import {USER} from "../actions/types";
+import {USERS, USER} from "../actions/types";
 
 // initial state
 const state = {
     all: {},
     me: {
         name: null,
-        score: 9999
+        highestSpeed: null
     }
 };
 
 // mutations
 const mutations = {
+    [USERS.INIT] (state, ds) {
+        let users = ds.val();
+        debugger;
+        if (users) {
+            state.all = users;
+            if (users[state.me.name]) {
+                state.me.highestSpeed = users[state.me.name].highestSpeed;
+            }
+        }
+    },
+
+    [USER.INIT] (state, name, score) {
+        state.me.name = name;
+        state.me.highestSpeed = score;
+    },
+
     [USER.NAME_CHANGE] (state, name) {
         state.me.name = name;
         localStorage.setItem('username', name);
     },
 
-    [USER.INIT] (state, ds) {
-        let users = ds.val();
-        if (users) {
-            state.all = users;
-            if (users[state.me.name]) state.me = users[state.me.name];
-        }
+
+    [USER.UPDATED](state, ds){
+        state.me = ds.val();
     }
 };
 

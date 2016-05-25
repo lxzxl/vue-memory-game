@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import {USER} from "vuex/actions/types";
+import {USERS, USER} from "vuex/actions/types";
 
 
 export default class VueMemoryGame {
@@ -11,6 +11,7 @@ export default class VueMemoryGame {
         this.wilddog = wilddog;
         this.ref = this.wilddog.child('VueMemoryGame');
         this.username = localStorage.getItem('username') || 'Anonymous';
+        this.highestSpeed = localStorage.getItem('highestSpeed') || 9999;
     }
 
     init(dispatch, username) {
@@ -21,39 +22,36 @@ export default class VueMemoryGame {
         this.ref.off('child_removed');
         // add events.
         this.ref.once('value', datasnapshot => {
-            dispatch(USER.INIT, datasnapshot);
+            dispatch(USERS.INIT, datasnapshot);
         });
         // listen on value change.
         this.ref.on('child_added', datasnapshot => {
+            // TODO: update one user.
             dispatch(USER.INIT, datasnapshot);
         });
         this.ref.on('child_changed', datasnapshot => {
+            // TODO: update one user.
             dispatch(USER.INIT, datasnapshot);
         });
         this.ref.on('child_removed', datasnapshot => {
+            // TODO: update one user.
             dispatch(USER.INIT, datasnapshot);
         });
 
+        dispatch(USER.INIT, this.username, this.highestSpeed);
+    }
+
+    setUsername(dispatch, name) {
+        this.username = name;
         dispatch(USER.NAME_CHANGE, this.username);
     }
 
-    setUsername(name) {
-        this.username = name;
-    }
-
-    updateRecord(dispatch, username) {
+    updateScore(dispatch, highestSpeed) {
         if (!this.username) {
-            dispatch()
+            dispatch(USER.NAME_REQUIRED);
         }
-        this.ref.authWithPassword({
-            email,
-            password
-        }, (error, data) => {// login success handler.
-            if (error) {
-                reject('Login Failed!');
-            } else {
-                resolve(data);
-            }
-        });
+        this.ref.child(this.username).set({
+            highestSpeed
+        }, (err) => err && dispatch(USER.ERROR));
     }
 }

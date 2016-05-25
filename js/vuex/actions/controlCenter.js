@@ -13,7 +13,6 @@ export const init = function ({dispatch}) {
 export const reset = function ({dispatch}) {
     dispatch(TYPES.RESET, {
         leftMatched: 8,
-        highestSpeed: localStorage.getItem('highestSpeed') || 9999,
         status: STATUS.READY,
         cards: shuffle(cardNames.concat(cardNames))
             .map(name => ({flipped: false, cardName: name})),
@@ -30,15 +29,15 @@ let statusHandler = {
         }, 1000);
     },
 
-    PASS: function (dispatch) {
+    PASS: function (dispatch, elapsedMs) {
         clearInterval(timerId);
-        dispatch(TYPES.UPDATE_HIGHESTSPEED);
+        gameApi.updateScore(dispatch, elapsedMs);
     }
 };
 
-export const updateStatus = function ({dispatch}, status) {
+export const updateStatus = function ({dispatch}, status, ...args) {
     dispatch(TYPES.UPDATE_STATUS, status);
-    statusHandler[status] && statusHandler[status](dispatch);
+    statusHandler[status] && statusHandler[status](dispatch, ...args);
 };
 
 export const flipCard = function ({dispatch}, card) {
@@ -58,7 +57,10 @@ export const toggleModal = function ({dispatch}) {
 };
 
 export const updateUsername = function ({dispatch}, username) {
-    gameApi.setUsername(username);
-    dispatch(USER.NAME_CHANGE, username);
+    gameApi.setUsername(dispatch, username);
     dispatch(TYPES.TOGGLE_MODAL);
+};
+
+export const updateScore = function ({dispatch}) {
+    gameApi.updateScore(dispatch);
 };
