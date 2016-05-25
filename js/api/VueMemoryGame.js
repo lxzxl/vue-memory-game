@@ -19,7 +19,6 @@ export default class VueMemoryGame {
         this.ref.off('child_removed');
         // add events.
         this.ref.once('value', datasnapshot => {
-            debugger;
             dispatch(USER.INIT, datasnapshot);
         });
         // listen on value change.

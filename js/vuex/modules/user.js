@@ -7,7 +7,7 @@ import {USER} from "../actions/types";
 
 // initial state
 const state = {
-    name: localStorage.getItem('username'),
+    name: localStorage.getItem('username') || 'Anonymous',
     score: 9999
 };
 
@@ -15,6 +15,7 @@ const state = {
 const mutations = {
     [USER.NAME_CHANGE] (state, name) {
         state.name = name;
+        localStorage.setItem('username', name);
     },
 
     [USER.INIT] (state, ds) {

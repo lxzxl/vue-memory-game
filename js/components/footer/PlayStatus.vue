@@ -78,4 +78,8 @@
         left: 10px;
         font-size: 15px;
     }
+
+    input[name=username] {
+        width: 100%;
+    }
 </style>

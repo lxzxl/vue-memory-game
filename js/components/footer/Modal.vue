@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-mask" v-show="showModal">
+    <div class="modal-mask" v-show="showModal" transition="modal">
         <div class="modal-wrapper">
             <div class="modal-container">
                 <div class="modal-header">
@@ -88,6 +88,7 @@
 
     .modal-default-button {
         float: right;
+        margin-left: 10px;
     }
 
     /*
