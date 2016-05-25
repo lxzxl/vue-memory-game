@@ -7,25 +7,27 @@ import {USER} from "../actions/types";
 
 // initial state
 const state = {
-    name: localStorage.getItem('username') || 'Anonymous',
-    score: 9999
+    all: {},
+    me: {
+        name: null,
+        score: 9999
+    }
 };
 
 // mutations
 const mutations = {
     [USER.NAME_CHANGE] (state, name) {
-        state.name = name;
+        state.me.name = name;
         localStorage.setItem('username', name);
     },
 
     [USER.INIT] (state, ds) {
         let users = ds.val();
         if (users) {
-            debugger;
-            state.score = users[username].score;
+            state.all = users;
+            if (users[state.me.name]) state.me = users[state.me.name];
         }
     }
-
 };
 
 export default {

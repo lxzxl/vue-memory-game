@@ -1,6 +1,6 @@
 <template>
     <div class="status-footer">
-        <span class="user-info">{{ user.name }}<button @click="toggleModal">Change</button></span>
+        <span class="user-info">{{ user.me.name }}<button @click="toggleModal">Change</button></span>
         <span v-if="status === READY">Ready</span>
         <span v-if="status === PLAYING">Playing</span>
         <a v-if="status === PASS" v-on:click.prevent.stop="reset" href>Play again</a>
@@ -8,7 +8,7 @@
     </div>
     <modal :onconfirm="onconfirm">
         <h3 slot="header">Please input your name</h3>
-        <div slot="body"><input type="text" name="username" :value="user.name"></div>
+        <div slot="body"><input type="text" name="username" :value="user.me.name"></div>
     </modal>
 </template>
 

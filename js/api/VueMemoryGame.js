@@ -5,13 +5,15 @@
 
 import {USER} from "vuex/actions/types";
 
+
 export default class VueMemoryGame {
     constructor(wilddog) {
         this.wilddog = wilddog;
         this.ref = this.wilddog.child('VueMemoryGame');
+        this.username = localStorage.getItem('username') || 'Anonymous';
     }
 
-    init(dispatch) {
+    init(dispatch, username) {
         // remove registered events.
         this.ref.off('value');
         this.ref.off('child_added');
@@ -31,10 +33,12 @@ export default class VueMemoryGame {
         this.ref.on('child_removed', datasnapshot => {
             dispatch(USER.INIT, datasnapshot);
         });
+
+        dispatch(USER.NAME_CHANGE, this.username);
     }
 
-    isUserExists(dispatch, username) {
-        return this.ref.hasChild(username);
+    setUsername(name) {
+        this.username = name;
     }
 
     updateRecord(dispatch, username) {

@@ -58,6 +58,7 @@ export const toggleModal = function ({dispatch}) {
 };
 
 export const updateUsername = function ({dispatch}, username) {
+    gameApi.setUsername(username);
     dispatch(USER.NAME_CHANGE, username);
     dispatch(TYPES.TOGGLE_MODAL);
 };
