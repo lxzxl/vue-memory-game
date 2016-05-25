@@ -1,7 +1,6 @@
-
-
 export const STATUS = {
     READY: 'READY',
     PLAYING: 'PLAYING',
-    PASS: 'PASS'
+    PASS: 'PASS',
+    showModal: false
 };

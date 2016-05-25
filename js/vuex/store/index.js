@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import {TYPES} from "vuex/actions/types";
+import user from "../modules/user";
 
 //have vuex involved
 Vue.use(Vuex);
@@ -11,7 +12,7 @@ const state = {
     status: '',
     cards: [],
     elapsedMs: 0,
-    username: null
+    showModal: false
 };
 
 const mutations = {
@@ -57,17 +58,16 @@ const mutations = {
         }
     },
 
-    [TYPES.GET_USERNAME](st, username){
-        st.username = username;
-    },
-
-    [TYPES.SET_USERNAME](st, username){
-        st.username = username;
+    [TYPES.TOGGLE_MODAL](state){
+        state.showModal = !state.showModal;
     }
 };
 
 export default new Vuex.Store({
     state,
     mutations,
+    modules: {
+        user
+    },
     strict: process.env.NODE_ENV !== 'production'
 });

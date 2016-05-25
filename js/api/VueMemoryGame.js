@@ -12,7 +12,7 @@ export default class VueMemoryGame {
         this.username = localStorage.getItem('username');
     }
 
-    init(dispatch){
+    init(dispatch) {
         // remove registered events.
         this.ref.off('value');
         this.ref.off('child_added');
@@ -20,17 +20,17 @@ export default class VueMemoryGame {
         this.ref.off('child_removed');
         // add events.
         this.ref.once('value', datasnapshot => {
-            dispatch('PANELS_INIT', datasnapshot);
+            dispatch('USERS-INIT', datasnapshot);
         });
         // listen on value change.
         this.ref.on('child_added', datasnapshot => {
-            dispatch('PANELS_ADD', datasnapshot);
+            dispatch('USER-ADDED', datasnapshot);
         });
         this.ref.on('child_changed', datasnapshot => {
-            dispatch('PANELS_UPDATED', datasnapshot);
+            dispatch('USER-UPDATED', datasnapshot);
         });
         this.ref.on('child_removed', datasnapshot => {
-            dispatch('PANELS_REMOVE', datasnapshot);
+            dispatch('USER-REMOVE', datasnapshot);
         });
     }
 

@@ -1,13 +1,11 @@
 import {shuffle} from "lib/shuffle";
 import {STATUS} from "vuex/store/statusEnum";
-import {TYPES} from "./types";
+import {TYPES, USER} from "./types";
 
 const cardNames = ['8-ball', 'kronos', 'baked-potato', 'dinosaur', 'rocket', 'skinny-unicorn',
     'that-guy', 'zeppelin'];
 
 export const reset = function ({dispatch}) {
-    // TODO: get result from API and dispatch in callback or promise.
-    gameApi.init(dispatch);
     dispatch(TYPES.RESET, {
         leftMatched: 8,
         highestSpeed: localStorage.getItem('highestSpeed') || 9999,
@@ -50,6 +48,11 @@ export const match = function ({dispatch}) {
     dispatch(TYPES.DECREASE_MATCH);
 };
 
-export const setUsername = function ({dispatch}, username) {
-    dispatch(TYPES.SET_USERNAME, username);
-}
+export const toggleModal = function ({dispatch}) {
+    dispatch(TYPES.TOGGLE_MODAL);
+};
+
+export const updateUsername = function ({dispatch}, username) {
+    dispatch(USER.NAME_CHANGE, username);
+    dispatch(TYPES.TOGGLE_MODAL);
+};
