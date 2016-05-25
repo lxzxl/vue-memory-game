@@ -3,13 +3,12 @@
  */
 'use strict';
 
-import {TYPES} from "vuex/actions/types";
+import {USER} from "vuex/actions/types";
 
 export default class VueMemoryGame {
     constructor(wilddog) {
         this.wilddog = wilddog;
         this.ref = this.wilddog.child('VueMemoryGame');
-        this.username = localStorage.getItem('username');
     }
 
     init(dispatch) {
@@ -20,17 +19,18 @@ export default class VueMemoryGame {
         this.ref.off('child_removed');
         // add events.
         this.ref.once('value', datasnapshot => {
-            dispatch('USERS-INIT', datasnapshot);
+            debugger;
+            dispatch(USER.INIT, datasnapshot);
         });
         // listen on value change.
         this.ref.on('child_added', datasnapshot => {
-            dispatch('USER-ADDED', datasnapshot);
+            dispatch(USER.INIT, datasnapshot);
         });
         this.ref.on('child_changed', datasnapshot => {
-            dispatch('USER-UPDATED', datasnapshot);
+            dispatch(USER.INIT, datasnapshot);
         });
         this.ref.on('child_removed', datasnapshot => {
-            dispatch('USER-REMOVE', datasnapshot);
+            dispatch(USER.INIT, datasnapshot);
         });
     }
 

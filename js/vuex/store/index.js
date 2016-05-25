@@ -50,6 +50,7 @@ const mutations = {
     },
 
     [TYPES.UPDATE_HIGHESTSPEED](st) {
+        //TODO
         if (!localStorage.getItem('highestSpeed')) {
             return localStorage.setItem('highestSpeed', st.elapsedMs);
         }

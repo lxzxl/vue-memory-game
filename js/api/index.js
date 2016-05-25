@@ -6,10 +6,5 @@ import Wilddog from "wilddog";
 import VueMemoryGame from "./VueMemoryGame";
 
 const wilddog = new Wilddog("https://public.wilddogio.com/");
-const gameApi = new VueMemoryGame(wilddog);
 
-export default {
-    gameApi
-}
-
-
+export const gameApi = new VueMemoryGame(wilddog);

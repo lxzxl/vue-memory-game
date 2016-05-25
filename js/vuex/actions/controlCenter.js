@@ -1,9 +1,14 @@
 import {shuffle} from "lib/shuffle";
 import {STATUS} from "vuex/store/statusEnum";
 import {TYPES, USER} from "./types";
+import {gameApi} from "api";
 
 const cardNames = ['8-ball', 'kronos', 'baked-potato', 'dinosaur', 'rocket', 'skinny-unicorn',
     'that-guy', 'zeppelin'];
+
+export const init = function ({dispatch}) {
+    gameApi.init(dispatch);
+};
 
 export const reset = function ({dispatch}) {
     dispatch(TYPES.RESET, {
