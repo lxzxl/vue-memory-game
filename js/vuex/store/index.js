@@ -1,7 +1,6 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-
-import {TYPES} from 'vuex/actions/types';
+import Vue from "vue";
+import Vuex from "vuex";
+import {TYPES} from "vuex/actions/types";
 
 //have vuex involved
 Vue.use(Vuex);
@@ -11,7 +10,8 @@ const state = {
     highestSpeed: 0,
     status: '',
     cards: [],
-    elapsedMs: 0
+    elapsedMs: 0,
+    username: null
 };
 
 const mutations = {
@@ -55,6 +55,14 @@ const mutations = {
         if (localStorage.getItem('highestSpeed') > st.elapsedMs) {
             return localStorage.setItem('highestSpeed', st.elapsedMs);
         }
+    },
+
+    [TYPES.GET_USERNAME](st, username){
+        st.username = username;
+    },
+
+    [TYPES.SET_USERNAME](st, username){
+        st.username = username;
     }
 };
 
