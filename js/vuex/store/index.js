@@ -11,7 +11,8 @@ const state = {
     status: '',
     cards: [],
     elapsedMs: 0,
-    showModal: false
+    showModal: false,
+    showRank: false
 };
 
 const mutations = {
@@ -49,6 +50,9 @@ const mutations = {
 
     [TYPES.TOGGLE_MODAL](state){
         state.showModal = !state.showModal;
+    },
+    [TYPES.TOGGLE_RANK](state){
+        state.showRank = !state.showRank;
     }
 };
 

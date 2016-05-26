@@ -9,3 +9,5 @@ export const status = state => state.status;
 export const user = ({user}) => user;
 
 export const showModal = state => state.showModal;
+
+export const showRank = state => state.showRank;

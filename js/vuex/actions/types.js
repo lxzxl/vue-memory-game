@@ -5,7 +5,8 @@ export const TYPES = {
     FLIP: 'FLIP',
     FLIPS: 'FLIPS',
     DECREASE_MATCH: 'DECREASE-MATCH',
-    TOGGLE_MODAL: 'TOGGLE-MODAL'
+    TOGGLE_MODAL: 'TOGGLE-MODAL',
+    TOGGLE_RANK: 'TOGGLE-RANK'
 };
 
 export const USERS = {
