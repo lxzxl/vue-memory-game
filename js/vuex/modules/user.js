@@ -6,10 +6,9 @@
 import Vue from "vue";
 import {USERS, USER} from "../actions/types";
 
-var allUsers = {};
-
 // initial state
 const state = {
+    allUsers: {},
     me: {
         name: null,
         highestSpeed: null
@@ -23,8 +22,8 @@ const state = {
 const calWinner = function (state) {
     let name = null;
     let highestSpeed = 9999;
-    Object.keys(allUsers).forEach(_name => {
-        let user = allUsers[_name];
+    Object.keys(state.allUsers).forEach(_name => {
+        let user = state.allUsers[_name];
         if (_name === state.me.name) {
             state.me.highestSpeed = user.highestSpeed;
         }
@@ -43,7 +42,7 @@ const mutations = {
         let users = ds.val();
         debugger;
         if (users) {
-            allUsers = users;
+            state.allUsers = users;
             calWinner(state);
         }
     },
@@ -51,7 +50,7 @@ const mutations = {
     [USERS.ADDED] (state, ds) {
         let name = ds.key();
         let user = ds.val();
-        allUsers[name] = user;
+        Vue.set(state.allUsers, name, user);
         if (name === state.me.name) {
             state.me.highestSpeed = user.highestSpeed;
         }
@@ -63,10 +62,9 @@ const mutations = {
 
     [USERS.REMOVED] (state, ds) {
         let name = ds.key();
-        let user = ds.val();
-        if (allUsers[name]) {
-            delete allUsers[name];
-            if (user.highestSpeed < state.winner.highestSpeed) {
+        if (state.allUsers[name]) {
+            Vue.delete(state.allUsers, name);
+            if (name <= state.winner.name) {
                 calWinner(state);
             }
         }
