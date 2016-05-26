@@ -1,17 +1,20 @@
 <template>
     <div class="score">
         <span>Highest Speed</span>
-        <h2>{{ user.me.highestSpeed }}</h2>
+        <h2>{{ name }} - {{ highestSpeed }}</h2>
     </div>
 </template>
 
 <script>
-    import {user} from 'vuex/getters/stateHolder';
-
     export default {
         vuex: {
             getters: {
-                user
+                name({user}){
+                    return user.winner.name
+                },
+                highestSpeed({user}){
+                    return user.winner.highestSpeed
+                }
             }
         }
     }

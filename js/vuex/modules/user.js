@@ -7,8 +7,12 @@ import {USERS, USER} from "../actions/types";
 
 // initial state
 const state = {
-    all: {},
+    all: null,
     me: {
+        name: null,
+        highestSpeed: null
+    },
+    winner: {
         name: null,
         highestSpeed: null
     }
@@ -20,9 +24,50 @@ const mutations = {
         let users = ds.val();
         if (users) {
             state.all = users;
-            if (users[state.me.name]) {
-                state.me.highestSpeed = users[state.me.name].highestSpeed;
+            // search winner.
+            let winnerName = null;
+            let winnerScore = 9999;
+            Object.keys(users).forEach(name => {
+                let user = users[name];
+                if (name === state.me.name) {
+                    state.me.highestSpeed = user.highestSpeed;
+                }
+                if (user.highestSpeed < winnerScore) {
+                    winnerScore = user.highestSpeed;
+                    winnerName = name;
+                }
+            });
+            state.winner.name = winnerName;
+            state.winner.highestSpeed = winnerScore;
+        }
+    },
+
+    [USERS.ADDED] (state, ds) {
+        //TODO:need a function to check winner.
+        let name = ds.key();
+        let user = ds.val();
+        if (user.highestSpeed < state.winner.highestSpeed) {
+            if (name === state.me.name) {
+                state.me.highestSpeed = user.highestSpeed;
             }
+            state.winner.highestSpeed = user.highestSpeed;
+            state.winner.name = name;
+        }
+    },
+
+    [USERS.REMOVED] (state, ds) {
+        //TODO
+    },
+
+    [USERS.UPDATED] (state, ds) {
+        let name = ds.key();
+        let user = ds.val();
+        if (user.highestSpeed < state.winner.highestSpeed) {
+            if (name === state.me.name) {
+                state.me.highestSpeed = user.highestSpeed;
+            }
+            state.winner.highestSpeed = user.highestSpeed;
+            state.winner.name = name;
         }
     },
 

@@ -14,28 +14,27 @@ export default class VueMemoryGame {
         this.highestSpeed = localStorage.getItem('highestSpeed') || 9999;
     }
 
-    init(dispatch, username) {
+    init(dispatch) {
+        let refQuery = this.ref.orderByChild('highestSpeed');
         // remove registered events.
-        this.ref.off('value');
-        this.ref.off('child_added');
-        this.ref.off('child_changed');
-        this.ref.off('child_removed');
+        refQuery.off('value');
+        refQuery.off('child_added');
+        refQuery.off('child_changed');
+        refQuery.off('child_removed');
         // add events.
-        this.ref.once('value', datasnapshot => {
+        refQuery.on('value', datasnapshot => {
+            debugger;
             dispatch(USERS.INIT, datasnapshot);
         });
         // listen on value change.
-        this.ref.on('child_added', datasnapshot => {
-            // TODO: update one user.
-            dispatch(USERS.INIT, datasnapshot);
+        refQuery.on('child_added', datasnapshot => {
+            dispatch(USERS.ADDED, datasnapshot);
         });
-        this.ref.on('child_changed', datasnapshot => {
-            // TODO: update one user.
-            dispatch(USERS.INIT, datasnapshot);
+        refQuery.on('child_changed', datasnapshot => {
+            dispatch(USERS.UPDATED, datasnapshot);
         });
-        this.ref.on('child_removed', datasnapshot => {
-            // TODO: update one user.
-            dispatch(USERS.INIT, datasnapshot);
+        refQuery.on('child_removed', datasnapshot => {
+            dispatch(USERS.REMOVED, datasnapshot);
         });
 
         dispatch(USER.INIT, this.username, this.highestSpeed);

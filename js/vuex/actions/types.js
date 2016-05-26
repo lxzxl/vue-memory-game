@@ -9,7 +9,10 @@ export const TYPES = {
 };
 
 export const USERS = {
-    INIT: 'USERS-INIT'
+    INIT: 'USERS-INIT',
+    ADDED: 'USERS-ADD',
+    REMOVED: 'USERS-REMOVE',
+    UPDATED: 'USERS-UPDATED'
 };
 
 export const USER = {
