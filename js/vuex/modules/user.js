@@ -18,7 +18,6 @@ const state = {
 const mutations = {
     [USERS.INIT] (state, ds) {
         let users = ds.val();
-        debugger;
         if (users) {
             state.all = users;
             if (users[state.me.name]) {

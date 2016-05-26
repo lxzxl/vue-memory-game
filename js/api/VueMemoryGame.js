@@ -27,15 +27,15 @@ export default class VueMemoryGame {
         // listen on value change.
         this.ref.on('child_added', datasnapshot => {
             // TODO: update one user.
-            dispatch(USER.INIT, datasnapshot);
+            dispatch(USERS.INIT, datasnapshot);
         });
         this.ref.on('child_changed', datasnapshot => {
             // TODO: update one user.
-            dispatch(USER.INIT, datasnapshot);
+            dispatch(USERS.INIT, datasnapshot);
         });
         this.ref.on('child_removed', datasnapshot => {
             // TODO: update one user.
-            dispatch(USER.INIT, datasnapshot);
+            dispatch(USERS.INIT, datasnapshot);
         });
 
         dispatch(USER.INIT, this.username, this.highestSpeed);
