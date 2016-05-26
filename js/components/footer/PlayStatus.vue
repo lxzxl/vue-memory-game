@@ -1,6 +1,6 @@
 <template>
     <div class="status-footer">
-        <span class="user-info">{{ user.me.name }}
+        <span class="user-info">{{ user.me.name }}({{ user.me.highestSpeed }})
             <button @click="toggleModal">Change</button>
         </span>
         <span v-if="status === READY">Ready</span>

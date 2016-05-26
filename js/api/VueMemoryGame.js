@@ -22,10 +22,10 @@ export default class VueMemoryGame {
         refQuery.off('child_changed');
         refQuery.off('child_removed');
         // add events.
-        refQuery.on('value', datasnapshot => {
-            debugger;
-            dispatch(USERS.INIT, datasnapshot);
-        });
+        // refQuery.once('value', datasnapshot => {
+        //     debugger;
+        //     dispatch(USERS.INIT, datasnapshot);
+        // });
         // listen on value change.
         refQuery.on('child_added', datasnapshot => {
             dispatch(USERS.ADDED, datasnapshot);

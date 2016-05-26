@@ -1,7 +1,8 @@
 <template>
     <div class="score">
         <span>Highest Speed</span>
-        <h2>{{ name }} - {{ highestSpeed }}</h2>
+        <strong>{{ name }}</strong>
+        <h3>{{ highestSpeed }}</h3>
     </div>
 </template>
 
@@ -44,5 +45,8 @@
 
     h2 {
         color: #fff;
+    }
+    strong {
+        color: #0019FB;
     }
 </style>

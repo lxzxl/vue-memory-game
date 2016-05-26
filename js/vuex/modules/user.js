@@ -3,71 +3,88 @@
  */
 'use strict';
 
+import Vue from "vue";
 import {USERS, USER} from "../actions/types";
+
+var allUsers = {};
 
 // initial state
 const state = {
-    all: null,
     me: {
         name: null,
         highestSpeed: null
     },
     winner: {
         name: null,
-        highestSpeed: null
+        highestSpeed: 9999
     }
+};
+
+const calWinner = function (state) {
+    let name = null;
+    let highestSpeed = 9999;
+    Object.keys(allUsers).forEach(_name => {
+        let user = allUsers[_name];
+        if (_name === state.me.name) {
+            state.me.highestSpeed = user.highestSpeed;
+        }
+        if (user.highestSpeed < highestSpeed) {
+            highestSpeed = user.highestSpeed;
+            name = _name;
+        }
+    });
+    state.winner.name = name;
+    state.winner.highestSpeed = highestSpeed;
 };
 
 // mutations
 const mutations = {
     [USERS.INIT] (state, ds) {
         let users = ds.val();
+        debugger;
         if (users) {
-            state.all = users;
-            // search winner.
-            let winnerName = null;
-            let winnerScore = 9999;
-            Object.keys(users).forEach(name => {
-                let user = users[name];
-                if (name === state.me.name) {
-                    state.me.highestSpeed = user.highestSpeed;
-                }
-                if (user.highestSpeed < winnerScore) {
-                    winnerScore = user.highestSpeed;
-                    winnerName = name;
-                }
-            });
-            state.winner.name = winnerName;
-            state.winner.highestSpeed = winnerScore;
+            allUsers = users;
+            calWinner(state);
         }
     },
 
     [USERS.ADDED] (state, ds) {
-        //TODO:need a function to check winner.
         let name = ds.key();
         let user = ds.val();
+        allUsers[name] = user;
+        if (name === state.me.name) {
+            state.me.highestSpeed = user.highestSpeed;
+        }
         if (user.highestSpeed < state.winner.highestSpeed) {
-            if (name === state.me.name) {
-                state.me.highestSpeed = user.highestSpeed;
-            }
-            state.winner.highestSpeed = user.highestSpeed;
             state.winner.name = name;
+            state.winner.highestSpeed = user.highestSpeed;
         }
     },
 
     [USERS.REMOVED] (state, ds) {
-        //TODO
+        let name = ds.key();
+        let user = ds.val();
+        if (allUsers[name]) {
+            delete allUsers[name];
+            if (user.highestSpeed < state.winner.highestSpeed) {
+                calWinner(state);
+            }
+        }
     },
 
     [USERS.UPDATED] (state, ds) {
         let name = ds.key();
         let user = ds.val();
-        if (user.highestSpeed < state.winner.highestSpeed) {
+        if (name === state.winner.name && user.highestSpeed > state.winner.highestSpeed) {
+            calWinner(state);
+        } else {
             if (name === state.me.name) {
                 state.me.highestSpeed = user.highestSpeed;
             }
-            state.winner.highestSpeed = user.highestSpeed;
-            state.winner.name = name;
+            if (user.highestSpeed < state.winner.highestSpeed) {
+                state.winner.name = name;
+                state.winner.highestSpeed = user.highestSpeed;
+            }
         }
     },
 
