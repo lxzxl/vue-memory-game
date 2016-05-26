@@ -1,23 +1,23 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-
-import {TYPES} from 'vuex/actions/types';
+import Vue from "vue";
+import Vuex from "vuex";
+import {TYPES} from "vuex/actions/types";
+import user from "../modules/user";
 
 //have vuex involved
 Vue.use(Vuex);
 
 const state = {
     leftMatched: 0,
-    highestSpeed: 0,
     status: '',
     cards: [],
-    elapsedMs: 0
+    elapsedMs: 0,
+    showModal: false,
+    showRank: false
 };
 
 const mutations = {
     [TYPES.RESET](st, newState) {
         st.leftMatched = newState.leftMatched;
-        st.highestSpeed = newState.highestSpeed;
         st.status = newState.status;
         st.cards = newState.cards;
         st.elapsedMs = newState.elapsedMs;
@@ -48,18 +48,19 @@ const mutations = {
         st.elapsedMs++;
     },
 
-    [TYPES.UPDATE_HIGHESTSPEED](st) {
-        if (!localStorage.getItem('highestSpeed')) {
-            return localStorage.setItem('highestSpeed', st.elapsedMs);
-        }
-        if (localStorage.getItem('highestSpeed') > st.elapsedMs) {
-            return localStorage.setItem('highestSpeed', st.elapsedMs);
-        }
+    [TYPES.TOGGLE_MODAL](state){
+        state.showModal = !state.showModal;
+    },
+    [TYPES.TOGGLE_RANK](state){
+        state.showRank = !state.showRank;
     }
 };
 
 export default new Vuex.Store({
     state,
     mutations,
+    modules: {
+        user
+    },
     strict: process.env.NODE_ENV !== 'production'
 });
