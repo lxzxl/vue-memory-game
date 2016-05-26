@@ -2,11 +2,10 @@
     <div class="status-footer">
         <span class="user-info">{{ user.me.name }}
             <button @click="toggleModal">Change</button>
-            <button @click="updateScore">Submit</button>
         </span>
         <span v-if="status === READY">Ready</span>
         <span v-if="status === PLAYING">Playing</span>
-        <a v-if="status === PASS" v-on:click.prevent.stop="reset" href>Play again</a>
+        <a v-if="status === PASS" @click.prevent.stop="reset" href>Play again</a>
         <span class="elapsed">{{ elapsedMs }} s</span>
     </div>
     <modal :onconfirm="onconfirm">
@@ -18,7 +17,7 @@
 <script>
     import Modal from './Modal';
 
-    import {reset, toggleModal, updateUsername, updateScore} from 'vuex/actions/controlCenter';
+    import {reset, toggleModal, updateUsername} from 'vuex/actions/controlCenter';
     import {status, elapsedMs, user} from 'vuex/getters/stateHolder';
 
     import {STATUS} from 'vuex/store/statusEnum';
@@ -33,8 +32,7 @@
             actions: {
                 reset,
                 toggleModal,
-                updateUsername,
-                updateScore
+                updateUsername
             },
             getters: {
                 status,

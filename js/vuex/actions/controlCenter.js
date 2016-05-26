@@ -60,7 +60,3 @@ export const updateUsername = function ({dispatch}, username) {
     gameApi.setUsername(dispatch, username);
     dispatch(TYPES.TOGGLE_MODAL);
 };
-
-export const updateScore = function ({dispatch}) {
-    gameApi.updateScore(dispatch);
-};
