@@ -12,7 +12,6 @@
                 <span class="name">{{ user.name }}</span> - {{ user.highestSpeed }}
             </li>
         </ul>
-
     </div>
 </template>
 
@@ -42,6 +41,14 @@
 
 <style scoped>
     .rank {
+        width: 450px;
+        height: 670px;
+        border: 4px solid #BDBDBD;
+        border-radius: 2px;
+        background-color: #faf8ef;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
