@@ -94,6 +94,11 @@ const mutations = {
     [USER.NAME_CHANGE] (state, name) {
         state.me.name = name;
         localStorage.setItem('username', name);
+        if (state.all[name]) {
+            state.me.highestSpeed = state.all[name].highestSpeed;
+        } else {
+            state.me.highestSpeed = 9999;
+        }
     },
 
 
