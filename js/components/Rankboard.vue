@@ -97,5 +97,21 @@
         float: left;
     }
 
+    @media screen and (max-width: 450px) {
+        .rank {
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+        }
 
+        ul {
+            font-size: 18px;
+            line-height: 34px;
+            padding: 20px 0;
+        }
+
+        li {
+            height: 34px;
+        }
+    }
 </style>

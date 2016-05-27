@@ -1,8 +1,9 @@
 <template>
     <div class="status-footer">
-        <span class="user-info">{{ user.me.name }}({{ user.me.highestSpeed }})
-            <button @click="toggleModal">Change</button>
-        </span>
+        <a href="#!" class="user-info" @click="toggleModal">
+            {{ user.me.name }}
+            <small>-{{ user.me.highestSpeed }}</small>
+        </a>
         <span v-if="status === READY">Ready</span>
         <span v-if="status === PLAYING">Playing</span>
         <a v-if="status === PASS" @click.prevent.stop="reset" href>Play again</a>
@@ -65,7 +66,7 @@
     }
 
     a {
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     .elapsed {
@@ -76,6 +77,7 @@
     }
 
     .user-info {
+        color: #0019FB;
         position: absolute;
         left: 10px;
         font-size: 15px;
