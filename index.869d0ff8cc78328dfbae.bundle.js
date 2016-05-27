@@ -56,7 +56,7 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _store = __webpack_require__(179);
+	var _store = __webpack_require__(144);
 
 	var _store2 = _interopRequireDefault(_store);
 
@@ -10454,34 +10454,30 @@
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(7);
-	__vue_script__ = __webpack_require__(10);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/App.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(178);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(7)
+	__vue_script__ = __webpack_require__(10)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/App.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(143)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/App.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/App.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 7 */
@@ -10783,39 +10779,54 @@
 	        Rankboard: _Rankboard2.default
 	    }
 	};
+	// </script>
+	//
+	// <style scoped>
+	//     .fade-transition {
+	//         transition: opacity .3s ease;
+	//     }
+	//
+	//     .fade-enter, .fade-leave {
+	//         opacity: 0;
+	//     }
+	// </style>
+	// <template>
+	//     <component :is="curView" keep-alive
+	//                transition="fade"
+	//                transition-mode="out-in">
+	//     </component>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(12);
-	__vue_script__ = __webpack_require__(14);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/Game.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(137);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(12)
+	__vue_script__ = __webpack_require__(14)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/Game.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(137)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/Game.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/Game.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 12 */
@@ -10852,7 +10863,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.game-panel[_v-779125e8] {\n    width: 450px;\n    height: 670px;\n    border: 4px solid #BDBDBD;\n    border-radius: 2px;\n    background-color: #faf8ef;\n    padding: 10px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n", ""]);
+	exports.push([module.id, "\n.game-panel[_v-779125e8] {\n    width: 450px;\n    height: 670px;\n    border: 4px solid #BDBDBD;\n    border-radius: 2px;\n    background-color: #faf8ef;\n    padding: 10px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n\n@media screen and (max-width: 450px) {\n    .game-panel[_v-779125e8]{\n        width: 100%;\n        height: 100%;\n        -ms-flex-pack: distribute;\n            justify-content: space-around;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -10887,6 +10898,9 @@
 
 	exports.default = {
 
+	    //vuex是一个特殊的属性，actions放在里面，
+	    //省却了我们手动传入this.$store的麻烦
+
 	    vuex: {
 	        actions: {
 	            init: _controlCenter.init,
@@ -10903,39 +10917,67 @@
 
 	    components: { Dashboard: _Dashboard2.default, Chessboard: _Chessboard2.default, Status: _PlayStatus2.default }
 	};
+	// </script>
+	//
+	// <style scoped>
+	//     .game-panel {
+	//         width: 450px;
+	//         height: 670px;
+	//         border: 4px solid #BDBDBD;
+	//         border-radius: 2px;
+	//         background-color: #faf8ef;
+	//         padding: 10px;
+	//         display: flex;
+	//         flex-direction: column;
+	//     }
+	//
+	//     @media screen and (max-width: 450px) {
+	//         .game-panel{
+	//             width: 100%;
+	//             height: 100%;
+	//             justify-content: space-around;
+	//         }
+	//     }
+	// </style>
+	// <template>
+	//     <div class="game-panel">
+	//         <!-- 组装上、中、下三个部分组件 -->
+	//         <Dashboard></Dashboard>
+	//         <Chessboard></Chessboard>
+	//         <Status></Status>
+	//     </div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(16);
-	__vue_script__ = __webpack_require__(18);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/dashboard/Dashboard.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(107);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(16)
+	__vue_script__ = __webpack_require__(18)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/dashboard/Dashboard.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(107)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/Dashboard.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/Dashboard.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 16 */
@@ -11004,39 +11046,54 @@
 	exports.default = {
 	    components: { Logo: _Logo2.default, MatchInfo: _MatchInfo2.default, Score: _Score2.default }
 	};
+	// </script>
+	//
+	// <style scoped>
+	// .status-bar{
+	//     width: 100%;
+	//     height: 100px;
+	//     display: flex;
+	//     justify-content: space-between;
+	// }
+	// </style>
+	// <template>
+	//     <div class="status-bar">
+	//        <Logo></Logo>
+	//        <Match-info></Match-info>
+	//        <Score></Score>
+	//     </div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(20);
-	__vue_script__ = __webpack_require__(22);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/dashboard/Logo.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(95);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(20)
+	__vue_script__ = __webpack_require__(22)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/dashboard/Logo.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(95)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/Logo.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/Logo.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 20 */
@@ -11073,7 +11130,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.logo[_v-d631a640] {\n    width: 160px;\n    height: 100px;\n    border-radius: 5px;\n    background-color: #5979ac;\n    color: #fff;\n    text-align: center;\n}\n\na[_v-d631a640] {\n    text-decoration: none;\n    color: #fff;\n}\n\nh1[_v-d631a640] {\n    height: 70px;\n    line-height: 70px;\n}\n\n.rank[_v-d631a640] {\n    height: 30px;\n    line-height: 30px;\n}\n\n.rank a[_v-d631a640] {\n    color: #2DFF00;\n}\n", ""]);
+	exports.push([module.id, "\n.logo[_v-d631a640] {\n    width: 160px;\n    height: 100px;\n    border-radius: 5px;\n    background-color: #5979ac;\n    color: #fff;\n    text-align: center;\n}\n\na[_v-d631a640] {\n    text-decoration: none;\n    color: #fff;\n}\n\nh1[_v-d631a640] {\n    height: 70px;\n    line-height: 70px;\n}\n\n.rank[_v-d631a640] {\n    height: 30px;\n    line-height: 30px;\n}\n\n.rank a[_v-d631a640] {\n    color: #2DFF00;\n}\n\n@media screen and (max-width: 450px) {\n    .logo[_v-d631a640]{\n        width: 150px;\n    }\n}\n\n@media screen and (max-width: 380px) {\n    .logo[_v-d631a640]{\n        width: 140px;\n    }\n}\n\n@media screen and (max-width: 360px) {\n    .logo[_v-d631a640]{\n        width: 110px;\n    }\n    a[_v-d631a640]{\n        font-size: 18px;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -11097,6 +11154,70 @@
 	        }
 	    }
 	};
+	// </script>
+	//
+	// <style scoped>
+	//     .logo {
+	//         width: 160px;
+	//         height: 100px;
+	//         border-radius: 5px;
+	//         background-color: #5979ac;
+	//         color: #fff;
+	//         text-align: center;
+	//     }
+	//
+	//     a {
+	//         text-decoration: none;
+	//         color: #fff;
+	//     }
+	//
+	//     h1 {
+	//         height: 70px;
+	//         line-height: 70px;
+	//     }
+	//
+	//     .rank {
+	//         height: 30px;
+	//         line-height: 30px;
+	//     }
+	//
+	//     .rank a {
+	//         color: #2DFF00;
+	//     }
+	//
+	//     @media screen and (max-width: 450px) {
+	//         .logo{
+	//             width: 150px;
+	//         }
+	//     }
+	//
+	//     @media screen and (max-width: 380px) {
+	//         .logo{
+	//             width: 140px;
+	//         }
+	//     }
+	//
+	//     @media screen and (max-width: 360px) {
+	//         .logo{
+	//             width: 110px;
+	//         }
+	//         a{
+	//             font-size: 18px;
+	//         }
+	//     }
+	// </style>
+	// <template>
+	//     <div class="logo">
+	//         <h1>
+	//             <a href="https://github.com/lxzxl/vue-memory-game" target="_blank">Memory</a>
+	//         </h1>
+	//         <span class="rank">
+	//             <a href="#!" @click="toggleRank">RANK</a>
+	//         </span>
+	//     </div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 23 */
@@ -23106,34 +23227,30 @@
 /* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(97);
-	__vue_script__ = __webpack_require__(99);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/dashboard/MatchInfo.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(101);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(97)
+	__vue_script__ = __webpack_require__(99)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/dashboard/MatchInfo.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(101)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/MatchInfo.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/MatchInfo.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 97 */
@@ -23170,7 +23287,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.board[_v-ff1bfda4]{\n    width: 120px;\n    height: 100px;\n    padding: 10px;\n    background-color: #bbada0;\n    border-radius: 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: #eae0d1;\n}\n\nspan[_v-ff1bfda4]{\n    font-size: 19px;\n    font-weight: bold;\n    display: block;\n    width: 100%;\n    text-align: center;\n}\n\nh2[_v-ff1bfda4]{\n    color: #fff;\n}\n", ""]);
+	exports.push([module.id, "\n.board[_v-ff1bfda4]{\n    width: 120px;\n    height: 100px;\n    padding: 10px;\n    background-color: #bbada0;\n    border-radius: 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: #eae0d1;\n}\n\nspan[_v-ff1bfda4]{\n    font-size: 19px;\n    font-weight: bold;\n    display: block;\n    width: 100%;\n    text-align: center;\n}\n\nh2[_v-ff1bfda4]{\n    color: #fff;\n}\n@media screen and (max-width: 450px) {\n    .board[_v-ff1bfda4]{\n        width: 105px;\n    }\n    span[_v-ff1bfda4]{\n        font-size: 17px;\n    }\n}\n\n@media screen and (max-width: 380px) {\n    .board[_v-ff1bfda4]{\n        width: 95px;\n    }\n}\n\n@media screen and (max-width: 360px) {\n    .board[_v-ff1bfda4]{\n        width: 90px;\n    }\n    span[_v-ff1bfda4]{\n        font-size: 15px;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -23194,6 +23311,65 @@
 	        }
 	    }
 	};
+	// </script>
+	//
+	// <style scoped>
+	// .board{
+	//     width: 120px;
+	//     height: 100px;
+	//     padding: 10px;
+	//     background-color: #bbada0;
+	//     border-radius: 5px;
+	//     display: flex;
+	//     flex-direction: column;
+	//     justify-content: space-between;
+	//     align-items: center;
+	//     color: #eae0d1;
+	// }
+	//
+	// span{
+	//     font-size: 19px;
+	//     font-weight: bold;
+	//     display: block;
+	//     width: 100%;
+	//     text-align: center;
+	// }
+	//
+	// h2{
+	//     color: #fff;
+	// }
+	// @media screen and (max-width: 450px) {
+	//     .board{
+	//         width: 105px;
+	//     }
+	//     span{
+	//         font-size: 17px;
+	//     }
+	// }
+	//
+	// @media screen and (max-width: 380px) {
+	//     .board{
+	//         width: 95px;
+	//     }
+	// }
+	//
+	// @media screen and (max-width: 360px) {
+	//     .board{
+	//         width: 90px;
+	//     }
+	//     span{
+	//         font-size: 15px;
+	//     }
+	// }
+	// </style>
+	// <template>
+	//     <div class="board">
+	//         <span>Pairs Left To Match</span>
+	//         <h2>{{ leftMatched }}</h2>
+	//     </div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 100 */
@@ -23243,34 +23419,30 @@
 /* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(103);
-	__vue_script__ = __webpack_require__(105);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/dashboard/Score.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(106);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(103)
+	__vue_script__ = __webpack_require__(105)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/dashboard/Score.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(106)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/Score.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/dashboard/Score.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 103 */
@@ -23307,7 +23479,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.score[_v-32f3cca6] {\n    width: 120px;\n    height: 100px;\n    padding: 10px;\n    background-color: #bbada0;\n    border-radius: 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: #eae0d1;\n}\n\n.score span[_v-32f3cca6] {\n    font-size: 19px;\n    font-weight: bold;\n    display: block;\n    width: 100%;\n    text-align: center;\n}\n\nh2[_v-32f3cca6] {\n    color: #fff;\n}\nstrong[_v-32f3cca6] {\n    color: #0019FB;\n}\n", ""]);
+	exports.push([module.id, "\n.score[_v-32f3cca6] {\n    width: 120px;\n    height: 100px;\n    padding: 10px;\n    background-color: #bbada0;\n    border-radius: 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: #eae0d1;\n}\n\n.score span[_v-32f3cca6] {\n    font-size: 19px;\n    font-weight: bold;\n    display: block;\n    width: 100%;\n    text-align: center;\n}\n\nh2[_v-32f3cca6] {\n    color: #fff;\n}\nstrong[_v-32f3cca6] {\n    color: #0019FB;\n}\n\n@media screen and (max-width: 450px) {\n    .score[_v-32f3cca6]{\n        width: 105px;\n    }\n    span[_v-32f3cca6]{\n        font-size: 17px;\n    }\n}\n@media screen and (max-width: 380px) {\n    .score[_v-32f3cca6]{\n        width: 95px;\n    }\n}\n\n@media screen and (max-width: 360px) {\n    .score[_v-32f3cca6]{\n        width: 90px;\n    }\n    span[_v-32f3cca6]{\n        font-size: 15px;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -23321,6 +23493,15 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	// <template>
+	//     <div class="score">
+	//         <span>Highest Speed</span>
+	//         <strong>{{ name }}</strong>
+	//         <h3>{{ highestSpeed }}</h3>
+	//     </div>
+	// </template>
+	//
+	// <script>
 	exports.default = {
 	    vuex: {
 	        getters: {
@@ -23337,6 +23518,60 @@
 	        }
 	    }
 	};
+	// </script>
+	//
+	// <style scoped>
+	//     .score {
+	//         width: 120px;
+	//         height: 100px;
+	//         padding: 10px;
+	//         background-color: #bbada0;
+	//         border-radius: 5px;
+	//         display: flex;
+	//         flex-direction: column;
+	//         justify-content: space-between;
+	//         align-items: center;
+	//         color: #eae0d1;
+	//     }
+	//
+	//     .score span {
+	//         font-size: 19px;
+	//         font-weight: bold;
+	//         display: block;
+	//         width: 100%;
+	//         text-align: center;
+	//     }
+	//
+	//     h2 {
+	//         color: #fff;
+	//     }
+	//     strong {
+	//         color: #0019FB;
+	//     }
+	//
+	//     @media screen and (max-width: 450px) {
+	//         .score{
+	//             width: 105px;
+	//         }
+	//         span{
+	//             font-size: 17px;
+	//         }
+	//     }
+	//     @media screen and (max-width: 380px) {
+	//         .score{
+	//             width: 95px;
+	//         }
+	//     }
+	//
+	//     @media screen and (max-width: 360px) {
+	//         .score{
+	//             width: 90px;
+	//         }
+	//         span{
+	//             font-size: 15px;
+	//         }
+	//     }
+	// </style>
 
 /***/ },
 /* 106 */
@@ -23354,34 +23589,30 @@
 /* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(109);
-	__vue_script__ = __webpack_require__(111);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/card/Chessboard.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(126);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(109)
+	__vue_script__ = __webpack_require__(111)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/card/Chessboard.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(126)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/card/Chessboard.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/card/Chessboard.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 109 */
@@ -23418,7 +23649,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.chessboard[_v-1d0db84a]{\n    margin-top: 20px;\n    width: 100%;\n    background-color: #fff;\n    height: 530px;\n    border-radius: 4px;\n    padding: 10px 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -ms-flex-line-pack: distribute;\n        align-content: space-around;\n}\n\n.container[_v-1d0db84a]:nth-child(4n){\n    margin-right: 0px;\n}\n", ""]);
+	exports.push([module.id, "\n.chessboard[_v-1d0db84a]{\n    margin-top: 20px;\n    width: 100%;\n    background-color: #fff;\n    height: 530px;\n    border-radius: 4px;\n    padding: 10px 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -ms-flex-line-pack: distribute;\n        align-content: space-around;\n}\n\n.container[_v-1d0db84a]:nth-child(4n){\n    margin-right: 0px;\n}\n\n@media screen and (max-width: 450px) {\n    .chessboard[_v-1d0db84a]{\n        height: 480px;\n        padding: 10px 0px;\n    }\n}\n@media screen and (max-width: 370px) {\n    .chessboard[_v-1d0db84a]{\n        height: 450px;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -23445,6 +23676,13 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	// <template>
+	//     <div class="chessboard">
+	//         <Card v-for="cart in cards" :option="cart" v-on:flipped="onFlipped"></Card>
+	//     </div>
+	// </template>
+	//
+	// <script>
 	exports.default = {
 
 	    data: function data() {
@@ -23494,39 +23732,68 @@
 
 	    components: { Card: _Card2.default }
 	};
+	// </script>
+	//
+	// <style scoped>
+	// .chessboard{
+	//     margin-top: 20px;
+	//     width: 100%;
+	//     background-color: #fff;
+	//     height: 530px;
+	//     border-radius: 4px;
+	//     padding: 10px 5px;
+	//     display: flex;
+	//     flex-wrap: wrap;
+	//     justify-content: center;
+	//     align-items: center;
+	//     align-content: space-around;
+	// }
+	//
+	// .container:nth-child(4n){
+	//     margin-right: 0px;
+	// }
+	//
+	// @media screen and (max-width: 450px) {
+	//     .chessboard{
+	//         height: 480px;
+	//         padding: 10px 0px;
+	//     }
+	// }
+	// @media screen and (max-width: 370px) {
+	//     .chessboard{
+	//         height: 450px;
+	//     }
+	// }
+	// </style>
 
 /***/ },
 /* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(113);
-	__vue_script__ = __webpack_require__(115);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/card/Card.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(116);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(113)
+	__vue_script__ = __webpack_require__(115)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/card/Card.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(116)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/card/Card.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/card/Card.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 113 */
@@ -23563,7 +23830,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.container[_v-41945bc5]{\n    width: 100px;\n    height: 121px;\n    margin-right: 3px;\n    cursor: pointer;\n    position: relative;\n    -webkit-perspective: 800px;\n            perspective: 800px;\n}\n\n.card[_v-41945bc5] {\n    width: 100%;\n    height: 100%;\n    -webkit-transition: -webkit-transform 1s;\n    transition: -webkit-transform 1s;\n    transition: transform 1s;\n    transition: transform 1s, -webkit-transform 1s;\n    -webkit-transform-style: preserve-3d;\n            transform-style: preserve-3d;\n}\n\n.card.flipped[_v-41945bc5] {\n    -webkit-transform: rotateY( 180deg );\n            transform: rotateY( 180deg );\n}\n\n.card img[_v-41945bc5] {\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n\n.card .back[_v-41945bc5] {\n    background: blue;\n    -webkit-transform: rotateY( 0deg );\n            transform: rotateY( 0deg );\n}\n\n.card .front[_v-41945bc5] {\n    background: blue;\n    -webkit-transform: rotateY( 180deg );\n            transform: rotateY( 180deg );\n}\n", ""]);
+	exports.push([module.id, "\n.container[_v-41945bc5]{\n    width: 100px;\n    height: 121px;\n    margin-right: 3px;\n    cursor: pointer;\n    position: relative;\n    -webkit-perspective: 800px;\n            perspective: 800px;\n}\n\n.card[_v-41945bc5] {\n    width: 100%;\n    height: 100%;\n    -webkit-transition: -webkit-transform 1s;\n    transition: -webkit-transform 1s;\n    transition: transform 1s;\n    transition: transform 1s, -webkit-transform 1s;\n    -webkit-transform-style: preserve-3d;\n            transform-style: preserve-3d;\n}\n\n.card.flipped[_v-41945bc5] {\n    -webkit-transform: rotateY( 180deg );\n            transform: rotateY( 180deg );\n}\n\n.card img[_v-41945bc5] {\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n\n.card .back[_v-41945bc5] {\n    background: blue;\n    -webkit-transform: rotateY( 0deg );\n            transform: rotateY( 0deg );\n}\n\n.card .front[_v-41945bc5] {\n    background: blue;\n    -webkit-transform: rotateY( 180deg );\n            transform: rotateY( 180deg );\n}\n\n@media screen and (max-width: 450px) {\n    .container[_v-41945bc5]{\n        width: 92px;\n        height: 111px;\n        margin-right: 1px;\n    }\n}\n\n@media screen and (max-width: 380px) {\n    .container[_v-41945bc5]{\n        width: 85px;\n        height: 102px;\n        margin-right: 1px;\n    }\n}\n\n@media screen and (max-width: 360px) {\n    .container[_v-41945bc5]{\n        width: 70px;\n        height: 84px;\n        margin-right: 1px;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -23612,6 +23879,89 @@
 
 	    components: {}
 	};
+	// </script>
+	//
+	// <style scoped>
+	// .container{
+	//     width: 100px;
+	//     height: 121px;
+	//     margin-right: 3px;
+	//     cursor: pointer;
+	//     position: relative;
+	//     perspective: 800px;
+	// }
+	//
+	// .card {
+	//     width: 100%;
+	//     height: 100%;
+	//     transition: transform 1s;
+	//     transform-style: preserve-3d;
+	// }
+	//
+	// .card.flipped {
+	//     transform: rotateY( 180deg );
+	// }
+	//
+	// .card img {
+	//     display: block;
+	//     height: 100%;
+	//     width: 100%;
+	//     position: absolute;
+	//     backface-visibility: hidden;
+	// }
+	//
+	// .card .back {
+	//     background: blue;
+	//     transform: rotateY( 0deg );
+	// }
+	//
+	// .card .front {
+	//     background: blue;
+	//     transform: rotateY( 180deg );
+	// }
+	//
+	// @media screen and (max-width: 450px) {
+	//     .container{
+	//         width: 92px;
+	//         height: 111px;
+	//         margin-right: 1px;
+	//     }
+	// }
+	//
+	// @media screen and (max-width: 380px) {
+	//     .container{
+	//         width: 85px;
+	//         height: 102px;
+	//         margin-right: 1px;
+	//     }
+	// }
+	//
+	// @media screen and (max-width: 360px) {
+	//     .container{
+	//         width: 70px;
+	//         height: 84px;
+	//         margin-right: 1px;
+	//     }
+	// }
+	// </style>
+	// <template>
+	//     <div class="container" v-on:click="flip">
+	//         <div class="card" v-bind:class="{ flipped: option.flipped }">
+	//             <img class="front" v-if="option.cardName === '8-ball'" src="../../../img/8-ball.png"/>
+	//             <img class="front" v-if="option.cardName === 'baked-potato'" src="../../../img/baked-potato.png"/>
+	//             <img class="front" v-if="option.cardName === 'dinosaur'" src="../../../img/dinosaur.png"/>
+	//             <img class="front" v-if="option.cardName === 'kronos'" src="../../../img/kronos.png"/>
+	//             <img class="front" v-if="option.cardName === 'rocket'" src="../../../img/rocket.png"/>
+	//             <img class="front" v-if="option.cardName === 'skinny-unicorn'" src="../../../img/skinny-unicorn.png"/>
+	//             <img class="front" v-if="option.cardName === 'that-guy'" src="../../../img/that-guy.png"/>
+	//             <img class="front" v-if="option.cardName === 'zeppelin'" src="../../../img/zeppelin.png"/>
+	//
+	//             <img class="back" src="../../../img/back.png"/>
+	//         </div>
+	//     </div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 116 */
@@ -23683,34 +24033,30 @@
 /* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(128);
-	__vue_script__ = __webpack_require__(130);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/footer/PlayStatus.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(136);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(128)
+	__vue_script__ = __webpack_require__(130)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/footer/PlayStatus.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(136)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/footer/PlayStatus.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/footer/PlayStatus.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 128 */
@@ -23747,7 +24093,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.status-footer[_v-f0338a60] {\n    position: relative;\n    margin-top: 10px;\n    width: 100%;\n    height: 20px;\n    line-height: 20px;\n    text-align: center;\n    font-size: 18px;\n    font-weight: bold;\n}\n\na[_v-f0338a60] {\n    text-decoration: none;\n}\n\n.elapsed[_v-f0338a60] {\n    position: absolute;\n    right: 10px;\n    font-size: 15px;\n    font-weight: normal;\n}\n\n.user-info[_v-f0338a60] {\n    position: absolute;\n    left: 10px;\n    font-size: 15px;\n}\n\ninput[name=username][_v-f0338a60] {\n    width: 100%;\n}\n", ""]);
+	exports.push([module.id, "\n.status-footer[_v-f0338a60] {\n    position: relative;\n    margin-top: 10px;\n    width: 100%;\n    height: 20px;\n    line-height: 20px;\n    text-align: center;\n    font-size: 18px;\n    font-weight: bold;\n}\n\na[_v-f0338a60] {\n    text-decoration: underline;\n}\n\n.elapsed[_v-f0338a60] {\n    position: absolute;\n    right: 10px;\n    font-size: 15px;\n    font-weight: normal;\n}\n\n.user-info[_v-f0338a60] {\n    color: #0019FB;\n    position: absolute;\n    left: 10px;\n    font-size: 15px;\n}\n\ninput[name=username][_v-f0338a60] {\n    width: 100%;\n}\n", ""]);
 
 	// exports
 
@@ -23774,6 +24120,24 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	// <template>
+	//     <div class="status-footer">
+	//         <a href="#!" class="user-info" @click="toggleModal">
+	//             {{ user.me.name }}
+	//             <small>-{{ user.me.highestSpeed }}</small>
+	//         </a>
+	//         <span v-if="status === READY">Ready</span>
+	//         <span v-if="status === PLAYING">Playing</span>
+	//         <a v-if="status === PASS" @click.prevent.stop="reset" href>Play again</a>
+	//         <span class="elapsed">{{ elapsedMs }} s</span>
+	//     </div>
+	//     <modal :onconfirm="onconfirm">
+	//         <h3 slot="header">Please input your name</h3>
+	//         <div slot="body"><input type="text" name="username" :value="user.me.name"></div>
+	//     </modal>
+	// </template>
+	//
+	// <script>
 	exports.default = {
 
 	    data: function data() {
@@ -23802,39 +24166,71 @@
 	    }
 
 	};
+	// </script>
+	//
+	// <style scoped>
+	//     .status-footer {
+	//         position: relative;
+	//         margin-top: 10px;
+	//         width: 100%;
+	//         height: 20px;
+	//         line-height: 20px;
+	//         text-align: center;
+	//         font-size: 18px;
+	//         font-weight: bold;
+	//     }
+	//
+	//     a {
+	//         text-decoration: underline;
+	//     }
+	//
+	//     .elapsed {
+	//         position: absolute;
+	//         right: 10px;
+	//         font-size: 15px;
+	//         font-weight: normal;
+	//     }
+	//
+	//     .user-info {
+	//         color: #0019FB;
+	//         position: absolute;
+	//         left: 10px;
+	//         font-size: 15px;
+	//     }
+	//
+	//     input[name=username] {
+	//         width: 100%;
+	//     }
+	// </style>
 
 /***/ },
 /* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(132);
-	__vue_script__ = __webpack_require__(134);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/footer/Modal.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(135);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(132)
+	__vue_script__ = __webpack_require__(134)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/footer/Modal.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(135)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/footer/Modal.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/footer/Modal.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 132 */
@@ -23890,6 +24286,40 @@
 
 	var _controlCenter = __webpack_require__(23);
 
+	// <template>
+	//     <div class="modal-mask" v-show="showModal" transition="modal">
+	//         <div class="modal-wrapper">
+	//             <div class="modal-container">
+	//                 <div class="modal-header">
+	//                     <slot name="header">
+	//                         default header
+	//                     </slot>
+	//                 </div>
+	//
+	//                 <div class="modal-body">
+	//                     <slot name="body">
+	//                         default body
+	//                     </slot>
+	//                 </div>
+	//
+	//                 <div class="modal-footer">
+	//                     <slot name="footer">
+	//                         <button class="modal-default-button"
+	//                                 @click="onconfirm">
+	//                             OK
+	//                         </button>
+	//                         <button class="modal-default-button"
+	//                                 @click="toggleModal">
+	//                             Cancel
+	//                         </button>
+	//                     </slot>
+	//                 </div>
+	//             </div>
+	//         </div>
+	//     </div>
+	// </template>
+	//
+	// <script>
 	exports.default = {
 	    props: ['onconfirm'],
 	    vuex: {
@@ -23901,6 +24331,70 @@
 	        }
 	    }
 	};
+	// </script>
+	//
+	// <style>
+	//     .modal-mask {
+	//         position: fixed;
+	//         z-index: 9998;
+	//         top: 0;
+	//         left: 0;
+	//         width: 100%;
+	//         height: 100%;
+	//         background-color: rgba(0, 0, 0, .5);
+	//         display: table;
+	//         transition: opacity .3s ease;
+	//     }
+	//
+	//     .modal-wrapper {
+	//         display: table-cell;
+	//         vertical-align: middle;
+	//     }
+	//
+	//     .modal-container {
+	//         width: 300px;
+	//         margin: 0px auto;
+	//         padding: 20px 30px;
+	//         background-color: #fff;
+	//         border-radius: 2px;
+	//         box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+	//         transition: all .3s ease;
+	//         font-family: Helvetica, Arial, sans-serif;
+	//     }
+	//
+	//     .modal-header h3 {
+	//         margin-top: 0;
+	//         color: #42b983;
+	//     }
+	//
+	//     .modal-body {
+	//         margin: 20px 0;
+	//     }
+	//
+	//     .modal-default-button {
+	//         float: right;
+	//         margin-left: 10px;
+	//     }
+	//
+	//     /*
+	//      * the following styles are auto-applied to elements with
+	//      * v-transition="modal" when their visiblity is toggled
+	//      * by Vue.js.
+	//      *
+	//      * You can easily play with the modal transition by editing
+	//      * these styles.
+	//      */
+	//
+	//     .modal-enter, .modal-leave {
+	//         opacity: 0;
+	//     }
+	//
+	//     .modal-enter .modal-container,
+	//     .modal-leave .modal-container {
+	//         -webkit-transform: scale(1.1);
+	//         transform: scale(1.1);
+	//     }
+	// </style>
 
 /***/ },
 /* 135 */
@@ -23912,7 +24406,7 @@
 /* 136 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"status-footer\" _v-f0338a60=\"\">\n    <span class=\"user-info\" _v-f0338a60=\"\">{{ user.me.name }}({{ user.me.highestSpeed }})\n        <button @click=\"toggleModal\" _v-f0338a60=\"\">Change</button>\n    </span>\n    <span v-if=\"status === READY\" _v-f0338a60=\"\">Ready</span>\n    <span v-if=\"status === PLAYING\" _v-f0338a60=\"\">Playing</span>\n    <a v-if=\"status === PASS\" @click.prevent.stop=\"reset\" href=\"\" _v-f0338a60=\"\">Play again</a>\n    <span class=\"elapsed\" _v-f0338a60=\"\">{{ elapsedMs }} s</span>\n</div>\n<modal :onconfirm=\"onconfirm\" _v-f0338a60=\"\">\n    <h3 slot=\"header\" _v-f0338a60=\"\">Please input your name</h3>\n    <div slot=\"body\" _v-f0338a60=\"\"><input type=\"text\" name=\"username\" :value=\"user.me.name\" _v-f0338a60=\"\"></div>\n</modal>\n";
+	module.exports = "\n<div class=\"status-footer\" _v-f0338a60=\"\">\n    <a href=\"#!\" class=\"user-info\" @click=\"toggleModal\" _v-f0338a60=\"\">\n        {{ user.me.name }}\n        <small _v-f0338a60=\"\">-{{ user.me.highestSpeed }}</small>\n    </a>\n    <span v-if=\"status === READY\" _v-f0338a60=\"\">Ready</span>\n    <span v-if=\"status === PLAYING\" _v-f0338a60=\"\">Playing</span>\n    <a v-if=\"status === PASS\" @click.prevent.stop=\"reset\" href=\"\" _v-f0338a60=\"\">Play again</a>\n    <span class=\"elapsed\" _v-f0338a60=\"\">{{ elapsedMs }} s</span>\n</div>\n<modal :onconfirm=\"onconfirm\" _v-f0338a60=\"\">\n    <h3 slot=\"header\" _v-f0338a60=\"\">Please input your name</h3>\n    <div slot=\"body\" _v-f0338a60=\"\"><input type=\"text\" name=\"username\" :value=\"user.me.name\" _v-f0338a60=\"\"></div>\n</modal>\n";
 
 /***/ },
 /* 137 */
@@ -23924,34 +24418,30 @@
 /* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var __vue_script__, __vue_template__;
-	__webpack_require__(139);
-	__vue_script__ = __webpack_require__(141);
-	if (__vue_script__ && __vue_script__.__esModule && Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] js/components/Rankboard.vue: named exports in *.vue files are ignored.");
-	}
-	__vue_template__ = __webpack_require__(177);
-	module.exports = __vue_script__ || {};
-	if (module.exports.__esModule) module.exports = module.exports.default;
+	var __vue_script__, __vue_template__
+	__webpack_require__(139)
+	__vue_script__ = __webpack_require__(141)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/components/Rankboard.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(142)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
-	  (typeof module.exports === "function" ? module.exports.options || (module.exports.options = {}) : module.exports).template = __vue_template__;
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
-	if (false) {
-	  (function () {
-	    module.hot.accept();
-	    var hotAPI = require("vue-hot-reload-api");
-	    hotAPI.install(require("vue"), false);
-	    if (!hotAPI.compatible) return;
-	    var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/Rankboard.vue";
-	    if (!module.hot.data) {
-	      hotAPI.createRecord(id, module.exports);
-	    } else {
-	      hotAPI.update(id, module.exports, __vue_template__);
-	    }
-	  })();
-	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/steven/MyProjects/Github/vue-memory-game/js/components/Rankboard.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 139 */
@@ -23988,7 +24478,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.rank[_v-29a60d90] {\n    width: 450px;\n    height: 670px;\n    border: 4px solid #BDBDBD;\n    border-radius: 2px;\n    background-color: #faf8ef;\n    padding: 10px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    text-align: center;\n}\n\n.header[_v-29a60d90] {\n    position: relative;\n    height: 100px;\n    line-height: 100px;\n    background-color: #5979ac;\n    border-radius: 5px;\n    color: white;\n}\n\n.back[_v-29a60d90] {\n    position: absolute;\n    left: 20px;\n}\n\n.back a[_v-29a60d90] {\n    text-decoration: none;\n    color: #2DFF00;\n}\n\nul[_v-29a60d90] {\n    color: #eae0d1;\n    height: 530px;\n    border-radius: 4px;\n    background-color: #bbada0;\n    font-size: 24px;\n    list-style: none;\n    line-height: 42px;\n    margin-top: 20px;\n    padding: 40px 0;\n}\n\nli[_v-29a60d90] {\n    height: 42px;\n    white-space: nowrap;\n    overflow: hidden;\n}\n\n.name[_v-29a60d90] {\n    color: #0019FB;\n}\n\n.back[_v-29a60d90] {\n    float: left;\n}\n\n\n", ""]);
+	exports.push([module.id, "\n.rank[_v-29a60d90] {\n    width: 450px;\n    height: 670px;\n    border: 4px solid #BDBDBD;\n    border-radius: 2px;\n    background-color: #faf8ef;\n    padding: 10px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    text-align: center;\n}\n\n.header[_v-29a60d90] {\n    position: relative;\n    height: 100px;\n    line-height: 100px;\n    background-color: #5979ac;\n    border-radius: 5px;\n    color: white;\n}\n\n.back[_v-29a60d90] {\n    position: absolute;\n    left: 20px;\n}\n\n.back a[_v-29a60d90] {\n    text-decoration: none;\n    color: #2DFF00;\n}\n\nul[_v-29a60d90] {\n    color: #eae0d1;\n    height: 530px;\n    border-radius: 4px;\n    background-color: #bbada0;\n    font-size: 24px;\n    list-style: none;\n    line-height: 42px;\n    margin-top: 20px;\n    padding: 40px 0;\n}\n\nli[_v-29a60d90] {\n    height: 42px;\n    white-space: nowrap;\n    overflow: hidden;\n}\n\n.name[_v-29a60d90] {\n    color: #0019FB;\n}\n\n.back[_v-29a60d90] {\n    float: left;\n}\n\n@media screen and (max-width: 450px) {\n    .rank[_v-29a60d90] {\n        width: 100%;\n        height: 100%;\n        -ms-flex-pack: distribute;\n            justify-content: space-around;\n    }\n\n    ul[_v-29a60d90] {\n        font-size: 18px;\n        line-height: 34px;\n        padding: 20px 0;\n    }\n\n    li[_v-29a60d90] {\n        height: 34px;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -24003,16 +24493,28 @@
 	    value: true
 	});
 
-	var _keys = __webpack_require__(142);
-
-	var _keys2 = _interopRequireDefault(_keys);
-
 	var _controlCenter = __webpack_require__(23);
 
 	var _stateHolder = __webpack_require__(100);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+	// <template>
+	//     <div class="rank">
+	//         <div class="header">
+	//             <span class="back">
+	//                 <a href="#!" @click="toggleRank">Back</a>
+	//             </span>
+	//             <h1>RANK</h1>
+	//         </div>
+	//
+	//         <ul>
+	//             <li v-for="user in allUsers| orderBy 'highestSpeed' | limitBy 10">
+	//                 <span class="name">{{ user.name }}</span> - {{ user.highestSpeed }}
+	//             </li>
+	//         </ul>
+	//     </div>
+	// </template>
+	//
+	// <script type="text/babel">
 	exports.default = {
 	    vuex: {
 	        getters: {
@@ -24026,7 +24528,7 @@
 	        allUsers: function allUsers() {
 	            var _this = this;
 
-	            return (0, _keys2.default)(this.user.all).map(function (name) {
+	            return Object.keys(this.user.all).map(function (name) {
 	                return {
 	                    name: name,
 	                    highestSpeed: _this.user.all[name].highestSpeed
@@ -24035,496 +24537,99 @@
 	        }
 	    }
 	};
+	// </script>
+	//
+	// <style scoped>
+	//     .rank {
+	//         width: 450px;
+	//         height: 670px;
+	//         border: 4px solid #BDBDBD;
+	//         border-radius: 2px;
+	//         background-color: #faf8ef;
+	//         padding: 10px;
+	//         display: flex;
+	//         flex-direction: column;
+	//         text-align: center;
+	//     }
+	//
+	//     .header {
+	//         position: relative;
+	//         height: 100px;
+	//         line-height: 100px;
+	//         background-color: #5979ac;
+	//         border-radius: 5px;
+	//         color: white;
+	//     }
+	//
+	//     .back {
+	//         position: absolute;
+	//         left: 20px;
+	//     }
+	//
+	//     .back a {
+	//         text-decoration: none;
+	//         color: #2DFF00;
+	//     }
+	//
+	//     ul {
+	//         color: #eae0d1;
+	//         height: 530px;
+	//         border-radius: 4px;
+	//         background-color: #bbada0;
+	//         font-size: 24px;
+	//         list-style: none;
+	//         line-height: 42px;
+	//         margin-top: 20px;
+	//         padding: 40px 0;
+	//     }
+	//
+	//     li {
+	//         height: 42px;
+	//         white-space: nowrap;
+	//         overflow: hidden;
+	//     }
+	//
+	//     .name {
+	//         color: #0019FB;
+	//     }
+	//
+	//     .back {
+	//         float: left;
+	//     }
+	//
+	//     @media screen and (max-width: 450px) {
+	//         .rank {
+	//             width: 100%;
+	//             height: 100%;
+	//             justify-content: space-around;
+	//         }
+	//
+	//         ul {
+	//             font-size: 18px;
+	//             line-height: 34px;
+	//             padding: 20px 0;
+	//         }
+	//
+	//         li {
+	//             height: 34px;
+	//         }
+	//     }
+	// </style>
 
 /***/ },
 /* 142 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(143), __esModule: true };
-
-/***/ },
-/* 143 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(144);
-	module.exports = __webpack_require__(164).Object.keys;
-
-/***/ },
-/* 144 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(145)
-	  , $keys    = __webpack_require__(147);
-
-	__webpack_require__(162)('keys', function(){
-	  return function keys(it){
-	    return $keys(toObject(it));
-	  };
-	});
-
-/***/ },
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.1.13 ToObject(argument)
-	var defined = __webpack_require__(146);
-	module.exports = function(it){
-	  return Object(defined(it));
-	};
-
-/***/ },
-/* 146 */
-/***/ function(module, exports) {
-
-	// 7.2.1 RequireObjectCoercible(argument)
-	module.exports = function(it){
-	  if(it == undefined)throw TypeError("Can't call method on  " + it);
-	  return it;
-	};
-
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(148)
-	  , enumBugKeys = __webpack_require__(161);
-
-	module.exports = Object.keys || function keys(O){
-	  return $keys(O, enumBugKeys);
-	};
-
-/***/ },
-/* 148 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var has          = __webpack_require__(149)
-	  , toIObject    = __webpack_require__(150)
-	  , arrayIndexOf = __webpack_require__(153)(false)
-	  , IE_PROTO     = __webpack_require__(157)('IE_PROTO');
-
-	module.exports = function(object, names){
-	  var O      = toIObject(object)
-	    , i      = 0
-	    , result = []
-	    , key;
-	  for(key in O)if(key != IE_PROTO)has(O, key) && result.push(key);
-	  // Don't enum bug & hidden keys
-	  while(names.length > i)if(has(O, key = names[i++])){
-	    ~arrayIndexOf(result, key) || result.push(key);
-	  }
-	  return result;
-	};
-
-/***/ },
-/* 149 */
-/***/ function(module, exports) {
-
-	var hasOwnProperty = {}.hasOwnProperty;
-	module.exports = function(it, key){
-	  return hasOwnProperty.call(it, key);
-	};
-
-/***/ },
-/* 150 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// to indexed object, toObject with fallback for non-array-like ES3 strings
-	var IObject = __webpack_require__(151)
-	  , defined = __webpack_require__(146);
-	module.exports = function(it){
-	  return IObject(defined(it));
-	};
-
-/***/ },
-/* 151 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(152);
-	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
-	  return cof(it) == 'String' ? it.split('') : Object(it);
-	};
-
-/***/ },
-/* 152 */
-/***/ function(module, exports) {
-
-	var toString = {}.toString;
-
-	module.exports = function(it){
-	  return toString.call(it).slice(8, -1);
-	};
-
-/***/ },
-/* 153 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// false -> Array#indexOf
-	// true  -> Array#includes
-	var toIObject = __webpack_require__(150)
-	  , toLength  = __webpack_require__(154)
-	  , toIndex   = __webpack_require__(156);
-	module.exports = function(IS_INCLUDES){
-	  return function($this, el, fromIndex){
-	    var O      = toIObject($this)
-	      , length = toLength(O.length)
-	      , index  = toIndex(fromIndex, length)
-	      , value;
-	    // Array#includes uses SameValueZero equality algorithm
-	    if(IS_INCLUDES && el != el)while(length > index){
-	      value = O[index++];
-	      if(value != value)return true;
-	    // Array#toIndex ignores holes, Array#includes - not
-	    } else for(;length > index; index++)if(IS_INCLUDES || index in O){
-	      if(O[index] === el)return IS_INCLUDES || index || 0;
-	    } return !IS_INCLUDES && -1;
-	  };
-	};
-
-/***/ },
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.1.15 ToLength
-	var toInteger = __webpack_require__(155)
-	  , min       = Math.min;
-	module.exports = function(it){
-	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
-	};
-
-/***/ },
-/* 155 */
-/***/ function(module, exports) {
-
-	// 7.1.4 ToInteger
-	var ceil  = Math.ceil
-	  , floor = Math.floor;
-	module.exports = function(it){
-	  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-	};
-
-/***/ },
-/* 156 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var toInteger = __webpack_require__(155)
-	  , max       = Math.max
-	  , min       = Math.min;
-	module.exports = function(index, length){
-	  index = toInteger(index);
-	  return index < 0 ? max(index + length, 0) : min(index, length);
-	};
-
-/***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var shared = __webpack_require__(158)('keys')
-	  , uid    = __webpack_require__(160);
-	module.exports = function(key){
-	  return shared[key] || (shared[key] = uid(key));
-	};
-
-/***/ },
-/* 158 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var global = __webpack_require__(159)
-	  , SHARED = '__core-js_shared__'
-	  , store  = global[SHARED] || (global[SHARED] = {});
-	module.exports = function(key){
-	  return store[key] || (store[key] = {});
-	};
-
-/***/ },
-/* 159 */
-/***/ function(module, exports) {
-
-	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-	var global = module.exports = typeof window != 'undefined' && window.Math == Math
-	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
-	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
-
-/***/ },
-/* 160 */
-/***/ function(module, exports) {
-
-	var id = 0
-	  , px = Math.random();
-	module.exports = function(key){
-	  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-	};
-
-/***/ },
-/* 161 */
-/***/ function(module, exports) {
-
-	// IE 8- don't enum bug keys
-	module.exports = (
-	  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
-	).split(',');
-
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// most Object methods by ES6 should accept primitives
-	var $export = __webpack_require__(163)
-	  , core    = __webpack_require__(164)
-	  , fails   = __webpack_require__(173);
-	module.exports = function(KEY, exec){
-	  var fn  = (core.Object || {})[KEY] || Object[KEY]
-	    , exp = {};
-	  exp[KEY] = exec(fn);
-	  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
-	};
-
-/***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var global    = __webpack_require__(159)
-	  , core      = __webpack_require__(164)
-	  , ctx       = __webpack_require__(165)
-	  , hide      = __webpack_require__(167)
-	  , PROTOTYPE = 'prototype';
-
-	var $export = function(type, name, source){
-	  var IS_FORCED = type & $export.F
-	    , IS_GLOBAL = type & $export.G
-	    , IS_STATIC = type & $export.S
-	    , IS_PROTO  = type & $export.P
-	    , IS_BIND   = type & $export.B
-	    , IS_WRAP   = type & $export.W
-	    , exports   = IS_GLOBAL ? core : core[name] || (core[name] = {})
-	    , expProto  = exports[PROTOTYPE]
-	    , target    = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE]
-	    , key, own, out;
-	  if(IS_GLOBAL)source = name;
-	  for(key in source){
-	    // contains in native
-	    own = !IS_FORCED && target && target[key] !== undefined;
-	    if(own && key in exports)continue;
-	    // export native or passed
-	    out = own ? target[key] : source[key];
-	    // prevent global pollution for namespaces
-	    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
-	    // bind timers to global for call from export context
-	    : IS_BIND && own ? ctx(out, global)
-	    // wrap global constructors for prevent change them in library
-	    : IS_WRAP && target[key] == out ? (function(C){
-	      var F = function(a, b, c){
-	        if(this instanceof C){
-	          switch(arguments.length){
-	            case 0: return new C;
-	            case 1: return new C(a);
-	            case 2: return new C(a, b);
-	          } return new C(a, b, c);
-	        } return C.apply(this, arguments);
-	      };
-	      F[PROTOTYPE] = C[PROTOTYPE];
-	      return F;
-	    // make static versions for prototype methods
-	    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-	    // export proto methods to core.%CONSTRUCTOR%.methods.%NAME%
-	    if(IS_PROTO){
-	      (exports.virtual || (exports.virtual = {}))[key] = out;
-	      // export proto methods to core.%CONSTRUCTOR%.prototype.%NAME%
-	      if(type & $export.R && expProto && !expProto[key])hide(expProto, key, out);
-	    }
-	  }
-	};
-	// type bitmap
-	$export.F = 1;   // forced
-	$export.G = 2;   // global
-	$export.S = 4;   // static
-	$export.P = 8;   // proto
-	$export.B = 16;  // bind
-	$export.W = 32;  // wrap
-	$export.U = 64;  // safe
-	$export.R = 128; // real proto method for `library` 
-	module.exports = $export;
-
-/***/ },
-/* 164 */
-/***/ function(module, exports) {
-
-	var core = module.exports = {version: '2.4.0'};
-	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
-
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// optional / simple context binding
-	var aFunction = __webpack_require__(166);
-	module.exports = function(fn, that, length){
-	  aFunction(fn);
-	  if(that === undefined)return fn;
-	  switch(length){
-	    case 1: return function(a){
-	      return fn.call(that, a);
-	    };
-	    case 2: return function(a, b){
-	      return fn.call(that, a, b);
-	    };
-	    case 3: return function(a, b, c){
-	      return fn.call(that, a, b, c);
-	    };
-	  }
-	  return function(/* ...args */){
-	    return fn.apply(that, arguments);
-	  };
-	};
-
-/***/ },
-/* 166 */
-/***/ function(module, exports) {
-
-	module.exports = function(it){
-	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
-	  return it;
-	};
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var dP         = __webpack_require__(168)
-	  , createDesc = __webpack_require__(176);
-	module.exports = __webpack_require__(172) ? function(object, key, value){
-	  return dP.f(object, key, createDesc(1, value));
-	} : function(object, key, value){
-	  object[key] = value;
-	  return object;
-	};
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var anObject       = __webpack_require__(169)
-	  , IE8_DOM_DEFINE = __webpack_require__(171)
-	  , toPrimitive    = __webpack_require__(175)
-	  , dP             = Object.defineProperty;
-
-	exports.f = __webpack_require__(172) ? Object.defineProperty : function defineProperty(O, P, Attributes){
-	  anObject(O);
-	  P = toPrimitive(P, true);
-	  anObject(Attributes);
-	  if(IE8_DOM_DEFINE)try {
-	    return dP(O, P, Attributes);
-	  } catch(e){ /* empty */ }
-	  if('get' in Attributes || 'set' in Attributes)throw TypeError('Accessors not supported!');
-	  if('value' in Attributes)O[P] = Attributes.value;
-	  return O;
-	};
-
-/***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(170);
-	module.exports = function(it){
-	  if(!isObject(it))throw TypeError(it + ' is not an object!');
-	  return it;
-	};
-
-/***/ },
-/* 170 */
-/***/ function(module, exports) {
-
-	module.exports = function(it){
-	  return typeof it === 'object' ? it !== null : typeof it === 'function';
-	};
-
-/***/ },
-/* 171 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = !__webpack_require__(172) && !__webpack_require__(173)(function(){
-	  return Object.defineProperty(__webpack_require__(174)('div'), 'a', {get: function(){ return 7; }}).a != 7;
-	});
-
-/***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Thank's IE8 for his funny defineProperty
-	module.exports = !__webpack_require__(173)(function(){
-	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
-	});
-
-/***/ },
-/* 173 */
-/***/ function(module, exports) {
-
-	module.exports = function(exec){
-	  try {
-	    return !!exec();
-	  } catch(e){
-	    return true;
-	  }
-	};
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(170)
-	  , document = __webpack_require__(159).document
-	  // in old IE typeof document.createElement is 'object'
-	  , is = isObject(document) && isObject(document.createElement);
-	module.exports = function(it){
-	  return is ? document.createElement(it) : {};
-	};
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.1.1 ToPrimitive(input [, PreferredType])
-	var isObject = __webpack_require__(170);
-	// instead of the ES6 spec version, we didn't implement @@toPrimitive case
-	// and the second argument - flag - preferred type is a string
-	module.exports = function(it, S){
-	  if(!isObject(it))return it;
-	  var fn, val;
-	  if(S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it)))return val;
-	  if(typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it)))return val;
-	  if(!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it)))return val;
-	  throw TypeError("Can't convert object to primitive value");
-	};
-
-/***/ },
-/* 176 */
-/***/ function(module, exports) {
-
-	module.exports = function(bitmap, value){
-	  return {
-	    enumerable  : !(bitmap & 1),
-	    configurable: !(bitmap & 2),
-	    writable    : !(bitmap & 4),
-	    value       : value
-	  };
-	};
-
-/***/ },
-/* 177 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"rank\" _v-29a60d90=\"\">\n    <div class=\"header\" _v-29a60d90=\"\">\n        <span class=\"back\" _v-29a60d90=\"\">\n            <a href=\"#!\" @click=\"toggleRank\" _v-29a60d90=\"\">Back</a>\n        </span>\n        <h1 _v-29a60d90=\"\">RANK</h1>\n    </div>\n\n    <ul _v-29a60d90=\"\">\n        <li v-for=\"user in allUsers| orderBy 'highestSpeed' | limitBy 10\" _v-29a60d90=\"\">\n            <span class=\"name\" _v-29a60d90=\"\">{{ user.name }}</span> - {{ user.highestSpeed }}\n        </li>\n    </ul>\n</div>\n";
 
 /***/ },
-/* 178 */
+/* 143 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<component :is=\"curView\" keep-alive=\"\" transition=\"fade\" transition-mode=\"out-in\" _v-24aa8477=\"\">\n</component>\n";
 
 /***/ },
-/* 179 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24539,13 +24644,13 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	var _vuex = __webpack_require__(180);
+	var _vuex = __webpack_require__(145);
 
 	var _vuex2 = _interopRequireDefault(_vuex);
 
 	var _types = __webpack_require__(26);
 
-	var _user = __webpack_require__(181);
+	var _user = __webpack_require__(146);
 
 	var _user2 = _interopRequireDefault(_user);
 
@@ -24603,7 +24708,7 @@
 	});
 
 /***/ },
-/* 180 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -25242,7 +25347,7 @@
 	}));
 
 /***/ },
-/* 181 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25343,6 +25448,11 @@
 	}), _defineProperty(_mutations, _types.USER.NAME_CHANGE, function (state, name) {
 	    state.me.name = name;
 	    localStorage.setItem('username', name);
+	    if (state.all[name]) {
+	        state.me.highestSpeed = state.all[name].highestSpeed;
+	    } else {
+	        state.me.highestSpeed = 9999;
+	    }
 	}), _defineProperty(_mutations, _types.USER.UPDATED, function (state, ds) {
 	    state.me = ds.val();
 	}), _mutations);
