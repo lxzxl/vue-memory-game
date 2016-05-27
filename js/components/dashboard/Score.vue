@@ -49,4 +49,27 @@
     strong {
         color: #0019FB;
     }
+
+    @media screen and (max-width: 450px) {
+        .score{
+            width: 105px;
+        }
+        span{
+            font-size: 17px;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        .score{
+            width: 95px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        .score{
+            width: 90px;
+        }
+        span{
+            font-size: 15px;
+        }
+    }
 </style>
